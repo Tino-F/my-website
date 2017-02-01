@@ -1,0 +1,94 @@
+doctype html
+html
+  head
+    title Tino Fileccia
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    div(align='center').container-fluid#navi
+
+      nav.navbar.navbar-default
+        div.container
+
+          div(class='navbar-header')
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navigation')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+
+          div(class='collapse navbar-collapse', id='navigation', align='center')
+            ul(class='nav navbar-nav')
+              li
+                a(href='/') HOME
+              li
+                a(href='/about') ABOUT
+              li.active
+                a(href='/projects') PROJECTS
+              li
+                a(href='/contact') CONTACT
+
+
+    //
+      div.container-fluid
+        div.key(align='center')
+          h2
+            i Color Key
+          div.col-sm-3#red_key
+            h3 security
+          div.col-sm-3#orange_key
+            h3 misc.
+          div.col-sm-3#green_key
+            h3 internet
+          div.col-sm-3#blue_key
+            h3 graphic design
+
+    br
+    br
+    br
+
+    div.container-fluid.projects(align='center')
+
+      div.sec
+        h1
+          b SRCNET
+        br
+        a(href='https://github.com/Tino-F/srcnet', target='_blank')
+          img(src='/imgs/srcnet.png', width='100%')
+        br
+        br
+        p SRCNET is node.js/socket.io botnet that uses client side javascript to send multiple GET request to remote servers by creating non-existent images that point to the target. This type of attack can be implemented with any html tag that utilizes the src attribute. The source code is currently on my github. Click on the image above to take a look.
+
+      div.graphic.col-sm-5
+        h1
+          b
+            i Clay'z Clean Cutz
+
+
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+
+    div.footer
+      ul
+        li
+          a(href='https://github.com/Tino-F/', target='_blank')
+            img(src='/imgs/github.png', width='60px')
+        li
+          a(href='http://codepen.io/TinoF/', target='_blank')
+            img(src='/imgs/codepen.png', width='40px')
+        li
+          a(href='https://www.reddit.com/user/TinoFileccia/', target='_blank')
+            img(src='/imgs/redddit.png', width='48px')

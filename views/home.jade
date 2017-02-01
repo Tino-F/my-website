@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    title Tino Fileccia
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    div(align='center').container-fluid#navi
+
+      nav.navbar.navbar-default
+        div.container
+
+          div(class='navbar-header')
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navigation')
+              span.icon-bar(height='1px')
+              span.icon-bar
+              span.icon-bar
+
+          div(class='collapse navbar-collapse', id='navigation', align='center')
+            ul.nav.navbar-nav
+              li.active
+                a(href='/') HOME
+              li
+                a(href='/about') ABOUT
+              li
+                a(href='/projects') PROJECTS
+              li
+                a(href='/contact') CONTACT
+
+    br
+    br
+    br
+
+    div.home.container
+      h1 Tino Fileccia
+
+//
+    div.footer
+      ul
+        li
+          a(href='https://github.com/Tino-F/', target='_blank')
+            img(src='/imgs/github.png', width='60px', style='margin-top: -10px;')
+        li
+          a(href='http://codepen.io/TinoF/', target='_blank')
+            img(src='/imgs/codepen.png', width='40px')
+        li
+          a(href='https://www.reddit.com/user/TinoFileccia/', target='_blank')
+            img(src='/imgs/redddit.png', width='48px')

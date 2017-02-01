@@ -1,0 +1,89 @@
+doctype html
+html
+  head
+    title Tino Fileccia
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/css/main.css')
+  body
+    div(align='center').container-fluid#navi
+
+      nav.navbar.navbar-default
+        div.container
+
+          div(class='navbar-header')
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navigation')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+
+          div(class='collapse navbar-collapse', id='navigation', align='center')
+            ul(class='nav navbar-nav')
+              li
+                a(href='/') HOME
+              li
+                a(href='/about') ABOUT
+              li
+                a(href='/projects') PROJECTS
+              li.active
+                a(href='/contact') CONTACT
+
+    br
+    br
+    br
+    br
+
+    div.contact.container(align='center')
+      h2 Say hi
+
+      br
+
+      form(method='POST', action='/contact')
+
+        h4 Name
+          br
+          input.form-control(type='text', name='Name')
+          br
+          br
+
+        h4 Email
+          br
+          input.form-control(type='email', name='Email')
+          br
+          br
+
+        h3 Subject
+          br
+          input.form-control(type='text', name='Subject')
+          br
+          br
+
+        h3 Message
+          br
+          textarea.form-control(type='text', name='Message')
+
+        br
+        br
+        br
+        br
+
+        input.form-control(type='submit', value='submit')
+
+    br
+    br
+    br
+
+    div.footer
+      ul
+        li
+          a(href='https://github.com/Tino-F/', target='_blank')
+            img(src='/imgs/github.png', width='60px', style='margin-top: -10px;')
+        li
+          a(href='http://codepen.io/TinoF/', target='_blank')
+            img(src='/imgs/codepen.png', width='40px')
+        li
+          a(href='https://www.reddit.com/user/TinoFileccia/', target='_blank')
+            img(src='/imgs/redddit.png', width='48px')

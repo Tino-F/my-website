@@ -1,0 +1,126 @@
+$blue: #99ffff;
+$orange: #ffcc99;
+$green: #99ff99;
+$red: #ff9999;
+$grey: #111111;
+$light_grey: #989898;
+$goth: 'Century Gothic', Century Gothic, AppleGothic, "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+$boli: "mv boli", sans-serif;
+
+body {
+  color: $grey;
+  font-family: $goth;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  border-width: 0px 0px 1px 0px;
+  border-radius: 0px;
+  background-color: inherit !important;
+  margin-bottom: 0 !important;
+}
+
+.navbar-toggle {
+  background: inherit;
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.nav {
+  li {
+    padding-left: 20px;
+  }
+}
+
+#navigation {
+  padding-left: calc( 50% - (700px / 2) );
+  padding-right: calc( 50% - (700px / 2) );
+  font-size: 2em;
+  font-color: $light_grey;
+}
+
+#navi {
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+.key {
+  border-width: 1px 1px 1px 1px ;
+  border-color: $grey;
+
+  h2 {
+      color: $light_grey;
+  }
+
+  div {
+    height: 35px;
+    h3 {
+      margin-top: 2px;
+    }
+  }
+}
+
+#red_key {
+  background: $red;
+}
+
+#orange_key {
+  background: $orange;
+}
+
+#blue_key {
+  background: $blue;
+}
+
+#green_key {
+  background: $green;
+}
+
+.sec {
+  width: 90%;
+
+  p {
+      font-size: 1.5em;
+  }
+
+  h1 {
+    border-bottom: 3px solid $red;
+  }
+
+}
+
+.graphic {
+  h1 {
+    border-bottom: 3px solid $blue;
+  }
+}
+
+.contact {
+  h2 {
+    color: $light_grey;
+    border-bottom: 2px solid $light_grey;
+  }
+}
+
+.footer {
+  background: $grey;
+  height: 70px;
+
+  ul {
+
+    li {
+      list-style-type: none;
+      color: white;
+      display: inline-block;
+      padding-left: 22%;
+    }
+
+  }
+
+}
